@@ -1,6 +1,6 @@
 FROM golang:1.16.7-alpine3.14 AS builder
 
-ENV XDD_GIT_URL https://github.com/cdle/xdd.git
+ENV XDD_GIT_URL https://github.com/764763903a/xdd-plus.git
 
 # 编译xdd
 # 安装xdd 目录为 /ql/xdd
@@ -19,7 +19,7 @@ FROM whyour/qinglong:latest
 
 ARG QL_VERSION
 
-LABEL maintainer="gcdd1993 <gcwm99@gmail.com>"
+LABEL maintainer="seafood678 <seafood678>"
 LABEL qinglong_version="${QL_VERSION}"
 
 RUN mkdir -p /ql/xdd
