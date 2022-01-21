@@ -6,22 +6,27 @@
 
 ## 教程
 
-[gcdd1993/qinglong-xdd: 青龙面板集成xdd (github.com)](https://github.com/gcdd1993/qinglong-xdd)
+[gcdd1993/qinglong-xdd: 青龙面板集成xdd (github.com)](https://github.com/gcdd1993/qinglong-xdd)  【作者已停止维护】
 
-[Docker Hub](https://hub.docker.com/repository/docker/gcdd1993/qinglong-xdd)
+[Docker Hub](https://hub.docker.com/repository/docker/gcdd1993/qinglong-xdd) 【作者已停止维护】
 
 ## 更新日志
 
 - v20210818
 
 > 青龙版本`v2.8.2`
+ 
+ 
+- 2022-01-21更新
+> xdd-plus版本 '764763903a/xdd-plus'
+> 青龙版本  'latest'
 
 ## 使用
 
 ```bash
 mkdir -p /data/qinglong-xdd
 cd /data/qinglong-xdd
-wget https://ghproxy.com/https://raw.githubusercontent.com/gcdd1993/qinglong-xdd/main/docker/docker-compose.yml
+wget https://ghproxy.com/raw.githubusercontent.com/madderhuang/qinglong-xdd/main/docker/docker-compose.yml
 docker-compose up -d
 # 然后修改xddconf目录下的配置文件
 # app.conf #启动端口
@@ -91,7 +96,7 @@ volumes:
   - ./raw:/ql/raw
   - ./scripts:/ql/scripts
   - ./jbot:/ql/jbot
-  - ./xddconf:/ql/xdd/conf
+  - ./xddconf:/ql/xdd-plus/conf
 ```
 
 # 交流或代挂
